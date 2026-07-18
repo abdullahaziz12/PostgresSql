@@ -83,7 +83,7 @@ This is not a single project — it's a growing collection of standalone `.sql` 
 ### Indexing
 | File | Description |
 |---|---|
-| `indexing_test.sql` | Indexing performance test on a 500-row dummy dataset — table creation, CSV import, `EXPLAIN ANALYZE` comparison of Seq Scan vs Index Scan before/after creating a UNIQUE index on `email`, a non-existent-value lookup test, and a 200k-row scale-up test to see a clearer performance gap |
+| `index.sql` | Indexing performance test on a 500-row dummy dataset — table creation, CSV import, `EXPLAIN ANALYZE` comparison of Seq Scan vs Index Scan before/after creating a UNIQUE index on `email`, a non-existent-value lookup test, and a 200k-row scale-up test to see a clearer performance gap |
 | `dummy_employees.csv` | 500 rows of dummy employee data (`name, lastname, company, post, salary, email`) with guaranteed-unique emails, used as the sample dataset for `indexing_test.sql` |
 
 ### Applied Practice
